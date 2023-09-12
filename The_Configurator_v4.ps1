@@ -2,7 +2,7 @@
 
 # Create a Windows Form
 $form = New-Object Windows.Forms.Form
-$form.Text = "Configurator V4.0"
+$form.Text = "Configurator V4.0.1"
 $form.Size = New-Object Drawing.Size(500,200)
 
 # Create labels and textboxes for input
@@ -73,7 +73,7 @@ $form.Controls.Add($buttonBrowseOutput)
 
 # Create a button to start the process
 $buttonGenerate = New-Object Windows.Forms.Button
-$buttonGenerate.Text = "Generate Config Files"
+$buttonGenerate.Text = "Generate"
 $buttonGenerate.Location = New-Object Drawing.Point(150, 120)
 $buttonGenerate.Add_Click({
     $csvFile = $textBoxCSV.Text
